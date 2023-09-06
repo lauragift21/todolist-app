@@ -1,5 +1,5 @@
 name = "todolist-app"
-main = "src/index.ts"
+main = "src/index.js"
 compatibility_date = "2023-09-04"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
@@ -10,9 +10,10 @@ compatibility_date = "2023-09-04"
 
 # Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+[[kv_namespaces]]
+binding = "EXAMPLE_TODOS"
+id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+preview_id = "47f38f717d2c4d8cb5c1fad40f720f88"
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
