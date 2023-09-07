@@ -26,6 +26,7 @@ export default {
 					data.todos?.map((todo) => ({
 						id: escapeHtml(todo.id),
 						name: escapeHtml(todo.name),
+						dueDate: escapeHtml(todo.dueDate),
 						completed: !!todo.completed,
 					})) ?? []
 				)
